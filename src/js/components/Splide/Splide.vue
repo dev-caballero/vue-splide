@@ -89,11 +89,11 @@ export default defineComponent({
         splide.value.mount(props.extensions, props.transition);
       }
     });
-
+    /*
     onUnmounted(() => {
       splide.value?.destroy();
     });
-
+*/
     onUpdated(() => {
       if (splide.value) {
         const newSlides = getSlides();
